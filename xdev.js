@@ -68,7 +68,7 @@ let bancht = JSON.parse(fs.readFileSync('./database/banchat.json'))
 banChats = false
 offline = false
 targetpc = '0'
-ownerNumber = ["62895619083555@s.whatsapp.net","6287817533783@s.whatsapp.net","6285283427860@s.whatsapp.net","6282290559350@s.whatsapp.net","628983583288@s.whatsapp.net","628886234378@s.whatsapp.net"]
+ownerNumber = ["6288805890128@s.whatsapp.net","628995388868@s.whatsapp.net","6289670250762@s.whatsapp.net"]
 fake = 'Bot WhatsApp\nFlicks Bot'
 fake1 = 'By Ridho'
 numbernye = '0'
@@ -502,7 +502,7 @@ gbutsan = [
  gbuttonan = {
 imageMessage: mhan.message.imageMessage,
     contentText: help.menu(pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita),
-    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\n𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻 𝑾𝑯𝑨𝑻𝑺𝑨𝑷𝑷\n© 𝑿 - 𝑫𝒆𝒗 𝑻𝒆𝒂𝒎`,
+    footerText: `Speed    : ${latensii.toFixed(4)} Second\nRuntime : ${teks}\n\Bot WhatsApp\n© Skyzo X Ridho`,
     buttons: gbutsan,
     headerType: 4
 }
