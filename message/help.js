@@ -1,5 +1,5 @@
 exports.menu = (pushname, sender, prefix, banChats, ucapanWaktu, timeWib, timeWit, timeWita) => {
-return`*╭─❒ 「 Flicks Bot 」 ──────*
+return`*╭─❒ 「 Flicks X Fariz Bot 」 ──────*
 *│*
 *│*⬡ *${ucapanWaktu} kak*
 *│*⬡ *Nama : ${pushname}*
@@ -180,10 +180,10 @@ return`*╭─❒ 「 Flicks Bot 」 ──────*
 ❒  *「 Thanks To : 」*  
 *│*
 *├  ▢  : Ridho*
-*├  ▢  : X - Flicks Team*
-*├  ▢  : Skyzo*
+*├  ▢  : Eggyol Gay*
+*├  ▢  : Fariz*
 *│*
 *└─────────────* 
 
-❏ *Flicks Bot WhatsApp* ❏`
+❏ *Flicks X Fariz Bot WhatsApp* ❏`
 }
