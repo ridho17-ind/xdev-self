@@ -70,7 +70,7 @@ offline = false
 targetpc = '0'
 ownerNumber = ["6288805890128@s.whatsapp.net","6285797208971@s.whatsapp.net","6289670250762@s.whatsapp.net"]
 fake = 'Follow Ig\Subs'
-fake1 = 'By Ridho'
+fake1 = 'Flicks X Fariz'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
@@ -155,11 +155,11 @@ module.exports = xdev = async (xdev, dev) => {
 
         //MESS
 		mess = {
-			wait: '_Tunggu sebentar ya kak_',
-			admin: '_Kusus admin_',
-			owner: '_Kusus owner_',
-			success: 'Berhasil!',
-			wrongFormat: 'Format salah, coba liat lagi di menu',
+			wait: '*_Tunggu Sebentar Ya Kak_*',
+			admin: '*_Khusus Admin_*',
+			owner: '*_Khusus Owner_*',
+			success: '*Berhasil!*',
+			wrongFormat: '*_Format salah, coba liat lagi di menu!_*',
 			error: {
 				stick: 'bukan sticker itu:v',
 				Iv: 'Linknya error:v'
@@ -495,9 +495,9 @@ pic = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
 gambar = await getBuffer(pic)
 mhan = await xdev.prepareMessage(from, gambar, image, {thumbnail: gambar})
 gbutsan = [
-  {buttonId: '😎 Owner Dan Lainnya 😎', buttonText: {displayText: '😎 Owner Dan Lainnya 😎'}, type: 1},
-  {buttonId: '🎁 Github Owner Saya 🎁', buttonText: {displayText: '🎁 Github Owner Saya 🎁'}, type: 1},
-  {buttonId: '🧼 Rest Api Key 🧼', buttonText: {displayText: '🧼 Rest Api Key 🧼'}, type: 1}
+  {buttonId: 'Contributors', buttonText: {displayText: 'Contributors'}, type: 1},
+  {buttonId: 'Github Owner', buttonText: {displayText: 'Github Owner'}, type: 1},
+  {buttonId: 'Rest Api Bot', buttonText: {displayText: 'Rest Api Bot'}, type: 1}
 ]
  gbuttonan = {
 imageMessage: mhan.message.imageMessage,
@@ -2272,8 +2272,8 @@ break
 
  
 default:
-if (button == '😎 Owner Dan Lainnya 😎') {
-console.log('😎 Owner Dan Lainnya 😎')
+if (button == 'Contributors') {
+console.log('Contributors')
 let inilist = []
 for (let i of ownerNumber) {
 const vname = xdev.contacts[i] != undefined ? xdev.contacts[i].vname || xdev.contacts[i].notify : undefined
@@ -2288,13 +2288,13 @@ hehe = await xdev.sendMessage(from, {
 }, 'contactsArrayMessage', { quoted: dev })
 xdev.sendMessage(from,'Nih Kak Owner dan temen" Flicks Bot',text,{quoted: hehe})
 }
-if (button == '🎁 Github Owner Saya 🎁') {
-console.log('🎁 Github Owner Saya 🎁')
-xdev.sendMessage(from, `*Nih kak github Owner Flicks Bot*\n*Scnya free kak dan juga free api 🤗*\n*Ingat ! jangan diperjual belikan yah !*\n\nhttps://github.com/ridho17-ind`, text, {quoted: dev})
+if (button == 'Github Owner') {
+console.log('Github Owner')
+xdev.sendMessage(from, `*Nih kak github Owner *\n*Scnya Free Ya 🤗*\n*Ingat ! Jangan Di Jual Anj*\n\n*_https://github.com/ridho17-ind_*`, text, {quoted: dev})
 }
-if (button == '🧼 Rest Api Key 🧼') {
-console.log('🧼 Rest Api Key 🧼')
-xdev.sendMessage(from, `*Nih kak rest api yang digunakan oleh Flicks Bot Dan juga free*\n\nhttps://xdev-api.herokuapp.com/api\n\n*Gunakan dengan bijak dan jangan spam yah kak 🙏🏻*`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
+if (button == 'Rest Api Bot') {
+console.log('Rest Api Bot')
+xdev.sendMessage(from, `*Nih Kak Rest Api Yang Kita Gunakan Dan Juga Free*\n\n*_https://xdev-api.herokuapp.com/api_*\n\n*Gunakan Dengan Bijak!*`, text, {"contextInfo": {text: 'HelloWorld',"forwardingScore": 3,isForwarded: true,sendEphemeral: true,mentionedJid: [sender],"externalAdReply": {"title": `Hallo kak ${pushname}`,"body": ``,"previewType": "PHOTO","thumbnailUrl": `https://telegra.ph/file/a082de791ef8aff96ec24.jpg`,"thumbnail": "","sourceUrl": ""}}, quoted: dev})
 }
 if (budy.startsWith('$')){
 if (!dev.key.fromMe && !isOwner) return
